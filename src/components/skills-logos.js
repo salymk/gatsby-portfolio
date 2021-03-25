@@ -49,4 +49,4 @@ const SkillLogos = () => (
   </>
 )
 
-export default skilSs - loL
+export default SkillLogos
