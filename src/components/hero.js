@@ -14,7 +14,7 @@ export const Hero = () => (
             />
             <div
               className="absolute inset-0 bg-gradient-to-r from-teal-800 to-cyan-700"
-              style="mix-blend-mode: multiply;"
+              style={{ mixBlendMode: 'multiply' }}
             />
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -42,3 +42,5 @@ export const Hero = () => (
     </div>
   </>
 )
+
+export default Hero
