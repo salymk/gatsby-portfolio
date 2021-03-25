@@ -1,15 +1,14 @@
 /* eslint-disable react/prop-types */
-import * as React from 'react'
+import React from 'react'
+import Header from './header'
 import Footer from './footer'
 
-import Header from './header'
-
-const Layout = ({ children }) => (
-  <>
-    <Header />
-    {children}
-    <Footer />
-  </>
-)
-
-export default Layout
+export default function Layout({ children }) {
+  return (
+    <>
+      <Header />
+      <div className="md:py-6">{children}</div>
+      <Footer />
+    </>
+  )
+}
