@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 /* https://play.tailwindcss.com/PqOAjtQ8FC?layout=preview */
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
