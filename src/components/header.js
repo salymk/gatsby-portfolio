@@ -6,7 +6,10 @@ import { Link as LinkScroll } from 'react-scroll'
 
 const Header = () => (
   <header>
-    <Menu as="div" className="relative bg-white">
+    <Menu
+      as="div"
+      className="fixed w-full z-20 top-0 shadow-md md:shadow-none md:relative bg-white "
+    >
       {({ open }) => (
         <>
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
@@ -48,7 +51,7 @@ const Header = () => (
                 smooth
                 offset={-100}
                 duration={1000}
-                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
+                className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
               >
                 Portfolio
               </LinkScroll>
@@ -59,7 +62,7 @@ const Header = () => (
                 smooth
                 offset={-100}
                 duration={1000}
-                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
+                className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
               >
                 About
               </LinkScroll>
@@ -70,7 +73,7 @@ const Header = () => (
                 smooth
                 offset={-100}
                 duration={1000}
-                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
+                className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
               >
                 Blog
               </LinkScroll>
@@ -81,18 +84,22 @@ const Header = () => (
                 smooth
                 offset={-100}
                 duration={1000}
-                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
+                className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
               >
                 Contact
               </LinkScroll>
             </nav>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a
-                href="#"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
+              <LinkScroll
+                to="contact"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="ml-8 cursor-pointer whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
               >
                 Hire me
-              </a>
+              </LinkScroll>
             </div>
           </div>
           <Transition
@@ -143,34 +150,71 @@ const Header = () => (
                 </div>
                 <div className="pt-5 pb-6">
                   <div className="px-2 space-y-1">
-                    <Menu.Item
-                      as="a"
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                    <LinkScroll
+                      to="portfolio"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
                     >
-                      Portfolio
-                    </Menu.Item>
-                    <Menu.Item
-                      as="a"
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                      >
+                        Portfolio
+                      </Menu.Item>
+                    </LinkScroll>
+
+                    <LinkScroll
+                      to="about"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
                     >
-                      About
-                    </Menu.Item>
-                    <Menu.Item
-                      as="a"
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                      >
+                        About
+                      </Menu.Item>
+                    </LinkScroll>
+                    <LinkScroll
+                      to="blog"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
                     >
-                      Blog
-                    </Menu.Item>
-                    <Menu.Item
-                      as="a"
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                      >
+                        Blog
+                      </Menu.Item>
+                    </LinkScroll>
+                    <LinkScroll
+                      to="contact"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
                     >
-                      Contact
-                    </Menu.Item>
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                      >
+                        Contact
+                      </Menu.Item>
+                    </LinkScroll>
                   </div>
                   <div className="mt-6 px-5">
                     <Menu.Item
