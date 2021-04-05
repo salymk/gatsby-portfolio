@@ -2,6 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Menu, Transition } from '@headlessui/react'
+import { Link as LinkScroll } from 'react-scroll'
 
 const Header = () => (
   <header>
@@ -41,30 +42,49 @@ const Header = () => (
               </Menu.Button>
             </div>
             <nav className="hidden md:flex space-x-10">
-              <a
-                href="#"
-                className="text-md font-medium text-gray-500 hover:text-gray-900"
+              <LinkScroll
+                to="portfolio"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
               >
                 Portfolio
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              </LinkScroll>
+
+              <LinkScroll
+                to="about"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
               >
                 About
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              </LinkScroll>
+
+              <LinkScroll
+                to="blog"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
               >
                 Blog
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              </LinkScroll>
+
+              <LinkScroll
+                to="contact"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
               >
                 Contact
-              </a>
+              </LinkScroll>
             </nav>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a

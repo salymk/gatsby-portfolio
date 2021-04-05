@@ -12,7 +12,10 @@ const ClientWork = () => (
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-cyan-500">
+                <h2
+                  id="portfolio"
+                  className="text-3xl font-extrabold tracking-tight text-cyan-500"
+                >
                   Stay on top of customer support
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">

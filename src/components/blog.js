@@ -5,7 +5,10 @@ const Blog = () => (
     <div className="relative bg-gray-50 mt-12 py-16 sm:py-24 sm:-mt-0 lg:py-32">
       <div className="relative">
         <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+          <p
+            id="blog"
+            className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
+          >
             Helpful Resources
           </p>
           <p className="mt-5 mx-auto max-w-prose text-xl text-gray-500">
