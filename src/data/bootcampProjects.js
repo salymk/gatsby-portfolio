@@ -1,5 +1,5 @@
 import employeeDirectoryIMG from '../images/employee_directory.png'
-import gameShowAppIMG from '../images/ameshow.png'
+import gameShowAppIMG from '../images/gameshow.png'
 import dashboardIMG from '../images/dashboard3.png'
 import photoGalleryIMG from '../images/gallery_mockup.png'
 import onlineFormIMG from '../images/desktop-form1.png'
