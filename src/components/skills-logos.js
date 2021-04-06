@@ -5,9 +5,10 @@ import {
   FaCss3Alt,
   FaDigitalOcean,
   FaGithub,
+  FaWordpress,
 } from 'react-icons/fa'
 import { GrGatsbyjs } from 'react-icons/gr'
-import { SiTailwindcss, SiJavascript } from 'react-icons/si'
+import { SiTailwindcss, SiJavascript, SiGraphql } from 'react-icons/si'
 import { IoLogoVercel } from 'react-icons/io5'
 import { DiGit } from 'react-icons/di'
 
@@ -48,6 +49,12 @@ const SkillLogos = () => (
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-900">GraphQL</span>
+              <SiGraphql size="4em" color="#dfdfdf" className="mt-2" />
+            </div>
+          </div>
+          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="flex flex-col items-center">
               <span className="text-sm text-gray-900">GatsbyJS</span>
               <GrGatsbyjs size="4em" color="#dfdfdf" className="mt-2" />
             </div>
@@ -56,6 +63,12 @@ const SkillLogos = () => (
             <div className="flex flex-col items-center">
               <span className="text-sm text-gray-900">TailwindCSS</span>
               <SiTailwindcss size="4em" color="#dfdfdf" className="mt-2" />
+            </div>
+          </div>
+          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-900">Wordpress</span>
+              <FaWordpress size="4em" color="#dfdfdf" className="mt-2" />
             </div>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
