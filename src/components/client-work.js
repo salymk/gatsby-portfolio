@@ -1,4 +1,6 @@
 import React from 'react'
+import TintBros from '../images/tintbros2.png'
+import AsquaredBlog from '../images/asquaredblog2.png'
 
 const ClientWork = () => (
   <>
@@ -16,7 +18,7 @@ const ClientWork = () => (
                   id="portfolio"
                   className="text-3xl font-extrabold tracking-tight text-cyan-500"
                 >
-                  Stay on top of customer support
+                  The Tint Bros
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
@@ -24,15 +26,23 @@ const ClientWork = () => (
                   laoreet sagittis viverra duis. In venenatis sem arcu pretium
                   pharetra at. Lectus viverra dui tellus ornare pharetra.
                 </p>
+                <p className="mt-2 text-base text-cyan-500">
+                  ReactJS / GatsbyJS / TailwindCSS / Headless Wordpress CMS /
+                  Gatsby Cloud / Vercel / Bluehost
+                </p>
                 <div className="mt-6 flex space-x-2">
                   <a
-                    href="#"
+                    href="https://thetintbros.com/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
                   >
                     Live Demo
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/thetintbros/wp-tintbros"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-600 bg-cyan-50 hover:bg-cyan-100"
                   >
                     Github
@@ -44,22 +54,28 @@ const ClientWork = () => (
               <blockquote>
                 <div>
                   <p className="text-base text-gray-500">
-                    &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                    diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                    venenatis in euismod ut.&rdquo;
+                    &ldquo;Working with Salym on my company’s website was a
+                    pleasure. He displayed skill and competency in his
+                    programming work where I needed specific changes to fit my
+                    business. What really took my experience to another level
+                    was Salym’s ability to design solutions through every step
+                    of the process for problems that could show up down the
+                    line. I appreciate his vast knowledge on business domains.
+                    He understands where a business owner comes from and has the
+                    expertise to translate it to a website that works.&rdquo;
                   </p>
                 </div>
                 <footer className="mt-3">
                   <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0">
+                    {/* <div className="flex-shrink-0">
                       <img
                         className="h-6 w-6 rounded-full"
                         src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                         alt=""
                       />
-                    </div>
+                    </div> */}
                     <div className="text-base font-medium text-gray-700">
-                      Marcia Hill, Digital Marketing Manager
+                      - Zaaz, CEO of The Tint Bros
                     </div>
                   </div>
                 </footer>
@@ -70,8 +86,8 @@ const ClientWork = () => (
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-                alt="Inbox user interface"
+                src={TintBros}
+                alt="The tint bros homepage"
               />
             </div>
           </div>
@@ -83,7 +99,7 @@ const ClientWork = () => (
             <div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-cyan-500">
-                  Better understand your customers
+                  Asquared Blog
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
@@ -91,15 +107,23 @@ const ClientWork = () => (
                   laoreet sagittis viverra duis. In venenatis sem arcu pretium
                   pharetra at. Lectus viverra dui tellus ornare pharetra.
                 </p>
+                <p className="mt-2 text-base text-cyan-500">
+                  ReactJS / GatsbyJS / Bulma CSS / Headless Ghost CMS / Vercel /
+                  DigitalOcean
+                </p>
                 <div className="mt-6 flex space-x-2">
                   <a
-                    href="#"
+                    href="https://asquaredblog.com/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
                   >
                     Live Demo
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/asquared2/asquaredblog"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-600 bg-cyan-50 hover:bg-cyan-100"
                   >
                     Github
@@ -118,15 +142,15 @@ const ClientWork = () => (
                 </div>
                 <footer className="mt-3">
                   <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0">
+                    {/* <div className="flex-shrink-0">
                       <img
                         className="h-6 w-6 rounded-full"
                         src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                         alt=""
                       />
-                    </div>
+                    </div> */}
                     <div className="text-base font-medium text-gray-700">
-                      Marcia Hill, Digital Marketing Manager
+                      - Abdel Albakri, Creator of Asquared Blog
                     </div>
                   </div>
                 </footer>
@@ -137,7 +161,7 @@ const ClientWork = () => (
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
+                src={AsquaredBlog}
                 alt="Customer profile user interface"
               />
             </div>
