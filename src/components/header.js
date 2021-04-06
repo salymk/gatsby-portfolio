@@ -14,9 +14,16 @@ const Header = () => (
         <>
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#" className="text-xl font-bold hover:text-gray-700">
+              <LinkScroll
+                to="home"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-xl font-bold hover:text-gray-700"
+              >
                 Salym Akhmedov
-              </a>
+              </LinkScroll>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
               <Menu.Button
