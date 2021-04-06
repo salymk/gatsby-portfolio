@@ -46,6 +46,16 @@ const Header = () => (
             </div>
             <nav className="hidden md:flex space-x-10">
               <LinkScroll
+                to="tools"
+                spy
+                smooth
+                offset={-100}
+                duration={1000}
+                className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
+              >
+                Skills
+              </LinkScroll>
+              <LinkScroll
                 to="portfolio"
                 spy
                 smooth
@@ -66,7 +76,7 @@ const Header = () => (
               >
                 About
               </LinkScroll>
-
+              {/* 
               <LinkScroll
                 to="blog"
                 spy
@@ -76,7 +86,7 @@ const Header = () => (
                 className="cursor-pointer text-lg font-medium text-gray-900 hover:text-gray-500"
               >
                 Blog
-              </LinkScroll>
+              </LinkScroll> */}
 
               <LinkScroll
                 to="contact"
@@ -151,6 +161,22 @@ const Header = () => (
                 <div className="pt-5 pb-6">
                   <div className="px-2 space-y-1">
                     <LinkScroll
+                      to="tools"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
+                    >
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent "
+                      >
+                        Skills
+                      </Menu.Item>
+                    </LinkScroll>
+                    <LinkScroll
                       to="portfolio"
                       spy
                       smooth
@@ -183,7 +209,7 @@ const Header = () => (
                         About
                       </Menu.Item>
                     </LinkScroll>
-                    <LinkScroll
+                    {/* <LinkScroll
                       to="blog"
                       spy
                       smooth
@@ -198,7 +224,7 @@ const Header = () => (
                       >
                         Blog
                       </Menu.Item>
-                    </LinkScroll>
+                    </LinkScroll> */}
                     <LinkScroll
                       to="contact"
                       spy
@@ -217,13 +243,22 @@ const Header = () => (
                     </LinkScroll>
                   </div>
                   <div className="mt-6 px-5">
-                    <Menu.Item
-                      as="a"
-                      href="#"
-                      className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-0 focus:border-transparent "
+                    <LinkScroll
+                      to="contact"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-md font-medium text-gray-500 hover:text-gray-900"
                     >
-                      Hire me
-                    </Menu.Item>
+                      <Menu.Item
+                        as="a"
+                        href="#"
+                        className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-0 focus:border-transparent "
+                      >
+                        Hire me
+                      </Menu.Item>
+                    </LinkScroll>
                   </div>
                 </div>
               </div>
