@@ -1,5 +1,15 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers'
+import * as yup from 'yup'
+import axios from 'axios'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+
+const schema = yup.object().shape({
+  Name: yup.string().required(),
+  Email: yup.string().email().required(),
+  Message: yup.string().required(),
+})
 
 const Contact = () => (
   <>
