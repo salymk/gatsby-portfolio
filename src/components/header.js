@@ -1,6 +1,4 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import { Menu, Transition } from '@headlessui/react'
 import { Link as LinkScroll } from 'react-scroll'
 
