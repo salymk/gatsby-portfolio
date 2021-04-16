@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link as LinkScroll } from 'react-scroll'
+import CoMountains from '../images/comountains.jpg'
 
 export const Hero = () => (
   <>
@@ -10,11 +11,11 @@ export const Hero = () => (
           <div className="absolute inset-0">
             <img
               className="h-full w-full object-cover"
-              src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-              alt="People working on laptops"
+              src={CoMountains}
+              alt="Colorado mountains"
             />
             <div
-              className="absolute inset-0 bg-gradient-to-r from-teal-800 to-cyan-700"
+              className="absolute inset-0 bg-gradient-to-r from-teal-900 to-cyan-900"
               style={{ mixBlendMode: 'multiply' }}
             />
           </div>
@@ -23,7 +24,7 @@ export const Hero = () => (
               <span className="block text-white">Hey, I'm Salym Akhmedov</span>
               <span className="block text-cyan-200">A React Developer</span>
             </h1>
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-cyan-200 sm:max-w-3xl">
+            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-cyan-50 sm:max-w-3xl">
               I build modern websites with ReactJS by focusing on user
               experience and beautiful design.
             </p>
