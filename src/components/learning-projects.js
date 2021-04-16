@@ -33,7 +33,7 @@ const LearningProjects = () => {
               className="text-cyan-500 hover:text-cyan-600"
             >
               {' '}
-              Udacity{' '}
+              Udacity
             </a>
             .
           </p>
@@ -41,7 +41,7 @@ const LearningProjects = () => {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {bootcampProjects.map(project => (
                 <div className="pt-6" key={project.id}>
-                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 transition duration-300 ease-in-out hover:shadow-md ">
                     <div className="-mt-6">
                       <div className="relative h-40 mb-6">
                         <img
