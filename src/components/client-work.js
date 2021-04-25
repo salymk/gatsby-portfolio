@@ -58,7 +58,11 @@ const ClientWork = () => {
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <blockquote>
                   <div>
-                    <p className="text-base text-gray-500">
+                    <p
+                      className={`text-base text-gray-500 ${
+                        readMoreTint ? '' : 'truncate'
+                      }`}
+                    >
                       &ldquo;Working with Salym on my company’s website was a
                       pleasure. He displayed skill and competency in his
                       programming work where I needed specific changes to fit my
@@ -70,6 +74,15 @@ const ClientWork = () => {
                       the expertise to translate it to a website that
                       works.&rdquo;
                     </p>
+                    <button
+                      className={`hover:text-cyan-500 ${
+                        readMoreTint ? 'hidden' : ''
+                      }`}
+                      type="button"
+                      onClick={() => setReadMoreTint(true)}
+                    >
+                      Read more
+                    </button>
                   </div>
                   <footer className="mt-3">
                     <div className="flex items-center space-x-3">
