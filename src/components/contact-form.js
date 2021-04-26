@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
+import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -18,7 +19,18 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) })
 
-  const onSubmit = data => console.log(data)
+  const onSubmit = data => {
+    console.log(data)
+    axios
+      .post('https://formspree.io/mvowvdgd', data)
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    document.getElementById('contact-form').reset()
+  }
 
   return (
     <>
@@ -26,6 +38,7 @@ const ContactForm = () => {
       <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
         <h3 className="text-lg font-medium text-gray-900">Send a message</h3>
         <form
+          id="contact-form"
           onSubmit={handleSubmit(onSubmit)}
           className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
         >
@@ -43,9 +56,10 @@ const ContactForm = () => {
                 type="text"
                 id="name"
                 autoComplete="given-name"
-                className="py-3 px-4 block w-full shadow-sm text-gray-900 
-                  errors.Name focus:border-cyan-500
-                border-gray-300 rounded-md"
+                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
+                  errors.Name ? 'border-red-500' : 'focus:border-cyan-500'
+                }
+                border-gray-300 rounded-md`}
                 {...register('Name')}
               />
               <span className="text-red-500">{errors.Name?.message}</span>
@@ -64,8 +78,10 @@ const ContactForm = () => {
                 name="Email"
                 type="email"
                 autoComplete="email"
-                className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:border-cyan-500
-                border-gray-300 rounded-md"
+                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
+                  errors.Email ? 'border-red-500' : 'focus:border-cyan-500'
+                }
+                border-gray-300 rounded-md`}
                 {...register('Email')}
               />
               <span className="text-red-500">{errors.Email?.message}</span>
@@ -80,18 +96,16 @@ const ContactForm = () => {
               >
                 Message
               </label>
-              <span id="message-max" className="text-sm text-gray-500">
-                Max. 500 characters
-              </span>
             </div>
             <div className="mt-1">
               <textarea
                 id="message"
                 name="Message"
                 rows="4"
-                className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:border-cyan-500
-                border-gray-300 rounded-md"
-                aria-describedby="message-max"
+                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
+                  errors.Message ? 'border-red-500' : 'focus:border-cyan-500'
+                }
+                border-gray-300 rounded-md`}
                 {...register('Message')}
               />
               <span className="text-red-500">{errors.Message?.message}</span>
