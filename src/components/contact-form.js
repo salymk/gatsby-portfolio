@@ -2,13 +2,21 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
+
+const schema = yup.object().shape({
+  Name: yup.string().required(),
+  Message: yup.string().required(),
+  Email: yup.string().email().required(),
+})
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ resolver: yupResolver(schema) })
 
   const onSubmit = data => console.log(data)
 
@@ -30,18 +38,17 @@ const ContactForm = () => {
             </label>
             <div className="mt-1">
               <input
+                name="Name"
                 placeholder="Name"
                 type="text"
                 id="name"
                 autoComplete="given-name"
-                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
-                  errors.Name ? 'border-red-500' : 'focus:border-cyan-500'
-                } border-gray-300 rounded-md`}
-                {...register('Name', { required: true, maxLength: 80 })}
+                className="py-3 px-4 block w-full shadow-sm text-gray-900 
+                  errors.Name focus:border-cyan-500
+                border-gray-300 rounded-md"
+                {...register('Name')}
               />
-              {errors.Name && (
-                <span className="text-red-500">This field is required</span>
-              )}
+              <span className="text-red-500">{errors.Name?.message}</span>
             </div>
           </div>
           <div>
@@ -57,17 +64,11 @@ const ContactForm = () => {
                 name="Email"
                 type="email"
                 autoComplete="email"
-                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
-                  errors.Email ? 'border-red-500' : 'focus:border-cyan-500'
-                } border-gray-300 rounded-md`}
-                {...register('Email', {
-                  required: true,
-                  pattern: /^\S+@\S+$/i,
-                })}
+                className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:border-cyan-500
+                border-gray-300 rounded-md"
+                {...register('Email')}
               />
-              {errors.Email && (
-                <span className="text-red-500">This field is required</span>
-              )}
+              <span className="text-red-500">{errors.Email?.message}</span>
             </div>
           </div>
 
@@ -88,15 +89,12 @@ const ContactForm = () => {
                 id="message"
                 name="Message"
                 rows="4"
-                className={`py-3 px-4 block w-full shadow-sm text-gray-900 ${
-                  errors.Message ? 'border-red-500' : 'focus:border-cyan-500'
-                } border-gray-300 rounded-md`}
+                className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:border-cyan-500
+                border-gray-300 rounded-md"
                 aria-describedby="message-max"
-                {...register('Message', { required: true, maxLength: 500 })}
+                {...register('Message')}
               />
-              {errors.Message && (
-                <span className="text-red-500">This field is required</span>
-              )}
+              <span className="text-red-500">{errors.Message?.message}</span>
             </div>
           </div>
           <div className="sm:col-span-2 sm:flex sm:justify-end">
