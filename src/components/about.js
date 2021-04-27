@@ -28,13 +28,18 @@ const About = () => (
             <blockquote>
               <div>
                 <h4 className="text-white text-3xl font-medium">Who Am I?</h4>
-                <p className="mt-6 text-2xl text-white">
-                  A fast learner and highly motivated frontend web developer
-                  with almost two years of experience. Passionate about learning
-                  and coding, with a desire to apply his skills on larger
-                  development teams. Eager to tackle more complex projects and
-                  continue to find ways to maximize user experience. Let's
-                  create something great together!
+                <p className="mt-6 text-lg text-white">
+                  Goal-driven and dedicated professional skilled in transforming
+                  client requirements into one-of-a-kind websites. Well-versed
+                  in analyzing problems and formulating innovative solutions to
+                  resolve customer challenges. Possess strong knowledge of
+                  design principles, typography, user interfaces, web standards,
+                  and usability. Articulate communicator with excellent
+                  interpersonal skills in building positive work relationships
+                  with clients and professionals of all levels. Proven success
+                  in translating relatively abstract strategic and tactical
+                  elements into practical, scalable solutions and detailed
+                  technical designs.
                 </p>
               </div>
             </blockquote>
