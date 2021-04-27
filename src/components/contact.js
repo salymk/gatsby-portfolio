@@ -80,12 +80,9 @@ const Contact = () => (
                 </svg>
               </div>
               <h3 id="contact" className="text-xl font-medium text-white">
-                Contact information
+                Want to work together? Let's get in touch.
               </h3>
-              <p className="mt-6 text-base text-white max-w-3xl">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
-              </p>
+              <p className="mt-6 text-base text-white max-w-3xl" />
               <dl className="mt-8 space-y-6">
                 <dt>
                   <span className="sr-only">Phone number</span>
