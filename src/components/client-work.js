@@ -122,9 +122,10 @@ const ClientWork = () => {
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
                     Asquared is a blog focused on exploring the challenges of
-                    modernity. For Abdel to easily publish articles, we used
+                    modernity. For my client to easily publish articles, I used
                     Ghost CMS for the backend, and having GatsbyJS for the front
-                    end makes the website user-friendly and SEO optimized.
+                    end makes the website user-friendly and SEO optimized for
+                    the ultimate blog experience.
                   </p>
                   <p className="mt-2 text-base text-cyan-500">
                     ReactJS / GatsbyJS / Bulma CSS / Headless Ghost CMS / Vercel
