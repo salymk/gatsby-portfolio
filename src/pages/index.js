@@ -8,7 +8,7 @@ import SkillLogos from '../components/skills-logos'
 import ClientWork from '../components/client-work'
 import LearningProjects from '../components/learning-projects'
 import About from '../components/about'
-import Blog from '../components/blog'
+// import Blog from '../components/blog'
 import Contact from '../components/contact'
 
 const IndexPage = () => (
