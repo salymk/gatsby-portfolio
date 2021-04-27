@@ -20,15 +20,8 @@ const ContactForm = () => {
   } = useForm({ resolver: yupResolver(schema) })
 
   const onSubmit = data => {
-    console.log(data)
-    axios
-      .post('https://formspree.io/mvowvdgd', data)
-      .then(response => {
-        console.log(response)
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    axios.post('https://formspree.io/mvowvdgd', data)
+
     document.getElementById('contact-form').reset()
   }
 
