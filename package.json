@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@headlessui/react": "^0.3.2",
+    "@headlessui/react": "^1.1.0",
+    "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.3.2",
     "@reach/dialog": "^0.14.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",

@@ -1255,10 +1255,15 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@headlessui/react@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-0.3.2.tgz#fa8600fa669fe704b84e9256855fb39092b6e233"
-  integrity sha512-N8XpYJNEP1jH5V8qq2cX8pnipOd93UJNKky1B7Ac3/yFFehB/0C4k5kOHt8ShHsmcohrZUB4sOl4+m0CjQpXng==
+"@headlessui/react@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.1.0.tgz#04cf1e779cdd514b294dc863205b686a5922fa93"
+  integrity sha512-cauadRPiC3lDxudbgLkHThAhfqLIzp7159z2tNjODxrpOnckOk809rfAj63YdXWreRbLETNOupq1pC4i1NX9xA==
+
+"@hookform/error-message@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@hookform/error-message/-/error-message-2.0.0.tgz#9b1b037fd816ea9b1531c06aa7fab5f5154aa740"
+  integrity sha512-Y90nHzjgL2MP7GFy75kscdvxrCTjtyxGmOLLxX14nd08OXRIh9lMH/y9Kpdo0p1IPowJBiZMHyueg7p+yrqynQ==
 
 "@hookform/resolvers@^2.3.2":
   version "2.3.2"
