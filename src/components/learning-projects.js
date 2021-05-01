@@ -53,14 +53,16 @@ const LearningProjects = () => (
                     </p>
 
                     <div className="mt-6 flex flex-row justify-center space-x-2">
-                      <a
-                        href={project.preview.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="w-1/2 inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
-                      >
-                        Live Demo
-                      </a>
+                      {project.preview.url ? (
+                        <a
+                          href={project.preview.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="w-1/2 inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
+                        >
+                          Live Demo
+                        </a>
+                      ) : null}
                       <a
                         href={project.github.url}
                         target="_blank"
