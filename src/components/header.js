@@ -134,9 +134,18 @@ const Header = () => (
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <a href="#" className="text-xl font-bold">
-                      Salym Akhmedov
-                    </a>
+                    <LinkScroll
+                      to="home"
+                      spy
+                      smooth
+                      offset={-100}
+                      duration={1000}
+                      className="cursor-pointer text-xl font-bold hover:text-gray-700"
+                    >
+                      <Menu.Item as="a" href="#">
+                        Salym Akhmedov
+                      </Menu.Item>
+                    </LinkScroll>
                   </div>
                   <div className="-mr-2">
                     <Menu.Button
