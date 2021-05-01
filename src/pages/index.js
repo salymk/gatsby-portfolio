@@ -14,7 +14,11 @@ import Contact from '../components/contact'
 const IndexPage = () => (
   <>
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title="Home"
+        description="I build modern websites with ReactJS by focusing on user
+              experience and beautiful design."
+      />
       <Hero />
       <SkillLogos />
       <ClientWork />
