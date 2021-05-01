@@ -12,7 +12,7 @@
 }
 
 .gatsby-image-wrapper img {
-  all: 0;
+  /* all: 0; */
   bottom: 0;
   height: 100%;
   left: 0;
