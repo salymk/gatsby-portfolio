@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import TintBros from '../images/tintbros2.png'
-import AsquaredBlog from '../images/asquaredblog2.png'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const ClientWork = () => {
   const [readMoreAsquared, setReadMoreAsquared] = useState()
@@ -103,10 +102,12 @@ const ClientWork = () => {
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                <img
+                <StaticImage
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={TintBros}
+                  src="../images/tintbros2.png"
                   alt="The tint bros homepage"
+                  placeholder="blurred"
+                  loading="eager"
                 />
               </div>
             </div>
@@ -205,10 +206,12 @@ const ClientWork = () => {
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
               <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                <img
+                <StaticImage
                   className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={AsquaredBlog}
-                  alt="Customer profile user interface"
+                  src="../images/asquaredblog2.png"
+                  alt="Asquared blog homepage"
+                  placeholder="blurred"
+                  loading="eager"
                 />
               </div>
             </div>
