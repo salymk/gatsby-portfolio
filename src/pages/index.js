@@ -15,8 +15,8 @@ const IndexPage = () => (
   <>
     <Layout>
       <SEO
-        title="Home"
-        description="I build modern websites with ReactJS by focusing on user
+        title="React Developer"
+        description="I build modern websites with ReactJS, GatsbyJS and TailwindCSS by focusing on user
               experience and beautiful design."
       />
       <Hero />
